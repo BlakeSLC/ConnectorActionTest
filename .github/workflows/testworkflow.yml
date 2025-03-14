@@ -1,0 +1,16 @@
+name: Test Input Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      custom_message:
+        description: 'Enter a custom message'
+        required: true
+        default: 'Hello, GitHub Actions!'
+
+jobs:
+  test-input:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display the input message
+        run: echo "The custom input was:${{github.event.inputs.custom_message}}"
