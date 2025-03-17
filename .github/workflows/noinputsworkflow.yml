@@ -1,4 +1,4 @@
-name: Test Input Workflow
+name: No Input Workflow
 
 on:
   workflow_dispatch:
