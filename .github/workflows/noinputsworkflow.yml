@@ -1,0 +1,11 @@
+name: Test Input Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-input:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display the input message
+        run: echo "No Inputs Success"
